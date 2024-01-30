@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <section class="main__left-side">
+                <img src="assets/images/logo.png">
+                <div class="main__textarea">
+                    <textarea placeholder="Digite seu texto aqui..." autofocus id="texto"
+                        onkeypress="return alpha(event)"></textarea>
+                </div>
+
+                <div class="main__info">
+                    <div class="main__info-geral">
+                        <img src="assets/images/info.png">Apenas letras minúsculas e sem acento.
+                    </div>
+                    <div class="main__buttons">
+                        <button class="main__right-side__button" id="btn-criptografar">Criptogragrar</button>
+                        <button class="main__right-side__button" id="btn-descriptografar">Descriptografar</button>
+                    </div>
+
+                </div>
+            </section>
+            <section class="main__right-side">
+                <div id="not-text">
+                    <img src="assets/images/cartoon.png">
+                    <div class="main__right-side__texts">
+                        <p class="main__right-side__texts__title">Nenhuma mensagem encontrada</p>
+                        <p class="main__right-side__texts__bottom-text">Digite um texto que você deseja criptografar ou
+                            descriptografar</p>
+                    </div>
+                </div>
+                <div id="with-text">
+                    <div class="area-with-text">
+                        <textarea id="to-add-text" readonly></textarea>                        
+                    </div>
+                    
+                    <button id="copy">Copiar</button>
+                    
+                </div>
+                
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
