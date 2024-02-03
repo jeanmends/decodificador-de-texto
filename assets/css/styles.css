@@ -50,6 +50,7 @@ textarea{
     font-size: 16px;
     width: 100%;
     height: 200px;
+    text-transform: lowercase;
 }
 
 .main__right-side__button{
@@ -277,3 +278,92 @@ textarea{
     }
  
   }
+
+  @media (max-width:500px) {
+    body{
+        background-color: #f3f5fc;
+    }
+    textarea{
+        width: 100%;
+    }
+    .area-with-text{
+        width: 100%;
+        background-color: #f3f5fc;
+        margin: 0;
+        padding: 0;
+    }
+
+    #with-text{
+        width: 100%;
+    }
+    .main__right-side{
+        width: 350px;
+    }
+
+    .main__left-side{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f5fc;
+    }
+
+    .container{
+        width: 100%;
+        padding: 0;
+        background-color: #f3f5fc;
+    }
+
+    .main__textarea{
+        width: 80%;
+    }
+
+    .main__right-side__button{
+        
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .main__right-side{
+        background-color: #f3f5fc;
+        width: 100%;
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+
+    .area-with-text{
+        
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #to-add-text{
+        width: 90%;
+        height: 80px;
+        border-radius: 0px;
+        margin: 0px;
+        background-color: white;
+     }
+
+     #with-text{
+        display: none;
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 30px;
+        gap: 10px;
+        background-color: #f3f5fc;
+    }
+}
