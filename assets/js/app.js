@@ -4,7 +4,7 @@ let semPalavra = document.getElementById("not-text");
 let comPalavra = document.getElementById("with-text");
 let ondeColocarPalavra = document.getElementById("to-add-text");
 const btnCopiar = document.getElementById("copy");
-
+let texto = document.getElementById("texto");
 
 btnCriptografar.addEventListener("click", function () {
     if (validarTexto()) {
@@ -34,10 +34,11 @@ btnDescriptografar.addEventListener("click", function () {
 
 
 })
-let texto = document.getElementById("texto");
+
 
 function criptografarTexto() {
     let verificar = texto.value;
+    verificar = verificar.toLocaleLowerCase();
     let novaPalavara = '';
     for (let i = 0; i < verificar.length; i++) {
         if (verificar[i] == 'a') {
@@ -55,14 +56,14 @@ function criptografarTexto() {
         }
     }
 
-    return novaPalavara;
+    return novaPalavara.toLocaleLowerCase();
 }
 
 function descriptografar() {
     let novaPalavra = texto.value;
     let novaMesmoPalavra = '';
 
-    novaMesmoPalavra = novaPalavra.replaceAll('ai', 'a')
+    novaMesmoPalavra = novaPalavra.toLocaleLowerCase().replaceAll('ai', 'a')
         .replaceAll('enter', 'e')
         .replaceAll('imes', 'i')
         .replaceAll('ober', 'o')
